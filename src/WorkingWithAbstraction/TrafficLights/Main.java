@@ -1,4 +1,4 @@
-package TrafficLights;
+package WorkingWithAbstraction.TrafficLights;
 
 import java.util.Arrays;
 import java.util.Scanner;
@@ -21,9 +21,15 @@ public class Main {
     private static void switchLights(Lights[] lights) {
         for (int i = 0; i < lights.length; i++) {
             switch (lights[i]){
-                case GREEN -> lights[i] = Lights.YELLOW;
-                case YELLOW -> lights[i] = Lights.RED;
-                case RED -> lights[i] = Lights.GREEN;
+                case RED:
+                    lights[i] = Lights.GREEN;
+                    break;
+                case GREEN:
+                    lights[i] = Lights.YELLOW;
+                    break;
+                case YELLOW:
+                    lights[i] = Lights.RED;
+                    break;
             }
         }
     }
