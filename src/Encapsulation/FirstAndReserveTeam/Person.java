@@ -12,23 +12,11 @@ public class Person {
         this.setLastName(lastName);
         this.setSalary(salary);
     }
-    public double getSalary() {
-        return salary;
-    }
-
     public void setSalary(double salary) {
         if (salary < 460){
             throw new IllegalArgumentException("Salary cannot be less than 460 leva");
         }
         this.salary = salary;
-    }
-
-    public String getFirstName() {
-        return firstName;
-    }
-
-    public String getLastName() {
-        return lastName;
     }
 
     public int getAge() {
@@ -59,13 +47,5 @@ public class Person {
     @Override
     public String toString() {
         return String.format("%s %s gets %s leva", firstName, lastName, salary);
-    }
-
-    public void increaseSalary(double bonus) {
-        if (this.age < 30){
-            this.setSalary(this.getSalary() + (this.getSalary() * bonus / 200));
-        }else{
-            this.setSalary(this.getSalary() + (this.getSalary() * bonus / 100));
-        }
     }
 }
