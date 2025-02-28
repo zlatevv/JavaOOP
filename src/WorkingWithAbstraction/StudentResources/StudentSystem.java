@@ -51,7 +51,7 @@ public class StudentSystem {
                 }
                 else
                 {
-                    view += " Very nice person.";
+                    view += " Very nice Inheritance.person.";
                 }
 
                 System.out.println(view);
