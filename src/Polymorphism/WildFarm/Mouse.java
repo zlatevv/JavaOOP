@@ -1,4 +1,4 @@
-package WildFarm;
+package Polymorphism.WildFarm;
 
 public class Mouse extends Mammal{
     public Mouse(String animalName, String animalType, Double animalWeight, Integer foodEaten, String livingRegion) {

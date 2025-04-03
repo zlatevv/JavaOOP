@@ -1,4 +1,4 @@
-package climbers.models.climber;
+package ExamPrep.climbers.models.climber;
 
 public class RockClimber extends BaseClimber{
     private static final int STRENGTH = 120;
@@ -8,11 +8,9 @@ public class RockClimber extends BaseClimber{
 
     @Override
     public void climb() {
-        if (this.canClimb()){
-            this.setStrength(this.getStrength() - 30);
-            if (this.getStrength() < 0){
-                this.setStrength(0);
-            }
+        this.setStrength(this.getStrength() - 60);
+        if (this.getStrength() < 0){
+            this.setStrength(0);
         }
     }
 }

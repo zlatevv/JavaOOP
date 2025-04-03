@@ -50,10 +50,8 @@ public class Animal {
 
     @Override
     public String toString() {
-        StringBuilder builder = new StringBuilder();
-        builder.append(String.format("%s%n", this.getClass().getSimpleName()));
-        builder.append(String.format("%s %d %s%n", this.getName(), this.getAge(), this.getGender()));
-        builder.append(String.format(this.produceSound()));
-        return builder.toString();
+        return String.format("%s%n", this.getClass().getSimpleName()) +
+                String.format("%s %d %s%n", this.getName(), this.getAge(), this.getGender()) +
+                String.format(this.produceSound());
     }
 }

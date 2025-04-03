@@ -1,4 +1,4 @@
-package WildFarm;
+package Polymorphism.WildFarm;
 
 public abstract class Mammal extends Animal{
     private String livingRegion;
